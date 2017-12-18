@@ -1,0 +1,10 @@
+[Unit]
+Description=Powertop autotune
+
+[Service]
+Type=idle
+Environment="TERM=dumb"
+ExecStart=/usr/sbin/powertop --auto-tune
+
+[Install]
+WantedBy=graphical.target
